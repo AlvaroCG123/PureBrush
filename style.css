@@ -208,21 +208,115 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+    /* NAVBAR */
     nav {
         display: flex;
-        height: 5.25rem;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        padding: 0 20px;
+    }
+
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 0;
     }
 
     nav ul li a {
         display: none;
     }
 
-    .section1 img{
-        width: 20rem;
-height: 13.375rem;
+    nav ul li button {
+        display: block;
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
     }
-    .section2 img{
-        width: 20rem;
-height: 13.375rem;
+
+    /* SECTION 1 */
+    .section1 {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .section1 img {
+        width: 110%;
+        height: auto;
+    }
+
+    .section1 div {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .section1 div button {
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .section2 {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .section2 img {
+        width: 110%;
+        height: auto;
+    }
+
+    .section2 div {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .section2 div button {
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        height: auto;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .textFooter h1 {
+        font-size: 1.5rem;
+    }
+
+    .textFooter p {
+        width: 100%;
+        max-width: 18rem;
+        font-size: 0.9rem;
+    }
+
+    .images {
+        padding: 0;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .images img {
+        width: 45%;
+        max-width: 10rem;
+    }
+
+    .insta {
+        margin-top: 1rem;
     }
 }
